@@ -17,8 +17,9 @@ using namespace std;
 /******************************************************************************************
  * ≤‚ ‘SUM
  ******************************************************************************************/
-int main ( int argc, char* argv[] ) {
-   int n = ( 1 < argc ) ? atoi ( argv[1] ) : 7; //ToDo: validate n
+int main ( ) {
+#define n 5
+   //int n = ( 1 < argc ) ? atoi ( argv[1] ) : 7; //ToDo: validate n
    int* A = ( int* ) malloc ( n * sizeof ( int ) ); //ToDo: check NULL != A
    srand ( ( unsigned int ) time ( NULL ) );
    for ( int i = 0; i < n; i++ ) A[i] = i;
