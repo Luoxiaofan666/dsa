@@ -17,12 +17,20 @@ using namespace std;
 /******************************************************************************************
  * 测试SUM
  ******************************************************************************************/
-int main ( ) {
+
 #define n 5
+int main ( ) {
+
    //int n = ( 1 < argc ) ? atoi ( argv[1] ) : 7; //ToDo: validate n
    int* A = ( int* ) malloc ( n * sizeof ( int ) ); //ToDo: check NULL != A
    srand ( ( unsigned int ) time ( NULL ) );
-   for ( int i = 0; i < n; i++ ) A[i] = i;
+   if (A != NULL)
+   {
+	   for (int i = 0; i < 5; i++)
+	   {
+		   A[i] = i;
+	   }
+   }
    shuffle ( A, n ); print ( A, n ); //创建长度为n的随机整数数组
    printf ( "SumI  = %d\n", sumI ( A, n ) );
    printf ( "SumR1 = %d\n", sum ( A, n ) );
