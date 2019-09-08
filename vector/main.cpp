@@ -176,6 +176,6 @@ void   testVector ( int testSize ) {
 int main ( ) {
    //if ( 2 > argc ) { printf ( "Usage: %s <size of test>\a\a\n", argv[0] ); return 1; }
    srand ( ( unsigned int ) time ( NULL ) ); //设置随机种子
-   testVector<int> ( atoi ( 10 ) ); //元素类型可以在这里任意选择
+   testVector<int> ( 10 ); //元素类型可以在这里任意选择
    return 0;
 }
