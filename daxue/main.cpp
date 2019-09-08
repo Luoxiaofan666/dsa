@@ -21,6 +21,7 @@ void phase ( int n, bool done ) {
 void towardsDaxue ( int n ) {
    phase ( n, false );
    if ( n + 1 < nStep ) towardsDaxue ( n + 1 );
+
    phase ( n, true );
 }
 
