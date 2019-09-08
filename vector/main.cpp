@@ -21,8 +21,10 @@ void TestFind ( Vector<T> & V, int n ) {
    for ( int i = 0; i < V.size(); i++ ) { //依次查找向量中元素，当然成功
       T e =  V[i]; print ( e );
       Rank r = V.find ( e );
-      if ( r < 0 ) printf ( " : not found until rank V[%d] <> %d", r, e );
-      else printf ( " : found at rank V[%d] = %d", r, V[r] );
+      if ( r < 0 ) 
+		  printf ( " : not found until rank V[%d] <> %d", r, e );
+      else 
+		  printf ( " : found at rank V[%d] = %d", r, V[r] );
       printf ( "\n" );
    }
    for ( int i = 0; i <= V.size(); i++ ) { //依次查找每对相邻元素的均值，可能成功
@@ -30,8 +32,10 @@ void TestFind ( Vector<T> & V, int n ) {
       T b = ( i < V.size() ) ? V[i] : INT_MAX / 2;
       T e =  ( a + b ) / 2; print ( e );
       Rank r = V.find ( e );
-      if ( r < 0 ) printf ( " : not found until rank V[%d] <> %d", r, e );
-      else printf ( " : found at rank V[%d] = %d", r, V[r] );
+      if ( r < 0 ) 
+		  printf ( " : not found until rank V[%d] <> %d", r, e );
+      else 
+		  printf ( " : found at rank V[%d] = %d", r, V[r] );
       printf ( "\n" );
    }
 }
@@ -80,6 +84,8 @@ void TestOrderedInsertion ( Vector<T> & V, int n ) {
  * 测试向量
  ******************************************************************************************/
 #define PRINT(x)  { print(x); crc(x); checkOrder(x); }
+
+
 template <typename T> //元素类型
 void   testVector ( int testSize ) {
    printf ( "\n  ==== Test %2d. Generate a random vector\n", testID++ );
