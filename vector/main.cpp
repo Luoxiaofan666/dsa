@@ -105,7 +105,8 @@ void   testVector ( int testSize ) {
    PRINT ( V );
    printf ( "\n  ==== Test %2d. Increase\n", testID++ ); 
    PRINT ( V );
-   increase ( V ); PRINT ( V );
+   increase ( V ); 
+   PRINT ( V );
    printf ( "\n  ==== Test %2d. FIND in\n", testID++ ); 
    PRINT ( V );
    TestFind<T> ( V, testSize );
