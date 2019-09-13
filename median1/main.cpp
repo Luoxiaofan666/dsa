@@ -20,13 +20,13 @@
 /******************************************************************************************
  * 中位数算法测试
  ******************************************************************************************/
-int main ( int argc, char* argv[] ) {
+int main (  ) {
 // 解析命令行
-   if ( 7 > argc ) { printf ( "Usage:\n\t%s <#tests> <n> <min1> <max1> <min2> <max2>\a\a\n", argv[0] ); return 1; }
-   int nTest = atoi ( argv[1] ); //测试轮数
-   int n = atoi ( argv[2] ); //向量长度
-   int min1 = atoi ( argv[3] ), max1 = atoi ( argv[4] ); //数值范围
-   int min2 = atoi ( argv[5] ), max2 = atoi ( argv[6] ); //数值范围
+   //if ( 7 > argc ) { printf ( "Usage:\n\t%s <#tests> <n> <min1> <max1> <min2> <max2>\a\a\n", argv[0] ); return 1; }
+   int nTest = 10; //测试轮数
+   int n = 30; //向量长度
+   int min1 = 3, max1 = 800; //数值范围
+   int min2 = 2, max2 = 450; //数值范围
    if ( ( nTest < 1 ) || ( n < 1 ) || ( max1 + 1 < min1 + n ) || ( max2 + 1 < min2 + n ) )
       { printf ( "arguments error\a\a\n" ); return 1; }
 // 随机种子
